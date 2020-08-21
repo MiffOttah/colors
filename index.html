@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Colors</title>
+	<link href='http://fonts.googleapis.com/css?family=Nova+Slim' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="colors.css" type="text/css">
+</head>
+<body>
+	<div class="effect" id="flash">&nbsp;</div>
+	<!-- <div class="effect" id="teleport-effect">&nbsp;</div> -->
+	<h1>
+		<span style="color: #f00">C</span>
+		<span style="color: #f70">o</span>
+		<span style="color: #ff0">l</span>
+		<span style="color: #0a0">o</span>
+		<span style="color: #00f">r</span>
+		<span style="color: #a0f">s</span>
+	</h1>
+	<p id="level-display">
+		<a data-level="0" href="#">01</a>
+		<a data-level="1" href="#">02</a>
+		<a data-level="2" href="#">03</a>
+		<a data-level="3" href="#">04</a>
+		<a data-level="4" href="#">05</a>
+		<a data-level="5" href="#">06</a>
+		<a data-level="6" href="#">07</a>
+		<a data-level="7" href="#">08</a>
+		<a data-level="8" href="#">09</a>
+		<a data-level="9" href="#">10</a>
+	</p>
+	<div id="player-keys">
+	</div>
+	<div id="game">
+		<p>Loading the game...</p>
+		<p>If this message never disappears, make sure JavaScript is enabled.</p>
+	</div>
+	<p id="editcontrols">
+		Edit Mode: <span id="editor-type">Empty</span> (Color: <span id="editor-color">---</span>)
+		<br>
+		<button class="editor-type" type="button" data-function="empty" value="">Empty</button>
+		<button class="editor-type" type="button" data-function="player" value="">Player</button>
+		<button class="editor-type" type="button" data-function="draw" value="1">Wall</button>
+		<button class="editor-type" type="button" data-function="draw" value="4">Checkpoint</button>
+		<button class="editor-type" type="button" data-function="draw" value="7">Exit</button>
+		<br>
+		<button class="editor-type" type="button" data-function="draw" value="2">Block</button>
+		<button class="editor-type" type="button" data-function="draw" value="3">Orb</button>
+		<button class="editor-type" type="button" data-function="draw" value="5">Outline</button>
+		<button class="editor-type" type="button" data-function="draw" value="6">Keycard</button>
+		<button class="editor-type" type="button" data-function="draw" value="8">Gate</button>
+		<button class="editor-type" type="button" data-function="sign" value="">Sign</button>
+		<button class="editor-type" type="button" data-function="tele" value="">Teleporter</button>
+		<br>
+		<button class="editor-type" type="button" data-function="switch" value="">Switch</button>
+		<button class="editor-type" type="button" data-function="draw" value="15">Wire</button>
+		<button class="editor-type" type="button" data-function="duplicator" value="">Duplicator</button>
+		<button class="editor-type" type="button" data-function="draw" value="14">MG Arm</button>
+		<button class="editor-type" type="button" data-function="draw" value="13">MG Control</button>
+		<br>
+		<button class="editor-color" type="button" value="1">R</button>
+		<button class="editor-color" type="button" value="2">B</button>
+		<button class="editor-color" type="button" value="4">Y</button>
+		<br>
+		<button class="editor-type" type="button" data-function="nuke" value="">Clear Level</button>
+		<button class="editor-type" type="button" data-function="copy" value="">Copy Level</button>
+	</p>
+	<p id="quickhelp">
+		<span>IJKL / WASD &mdash; Movement</span><br>
+		<span>R &mdash; Reset to last checkpoint</span>
+		<span>T &mdash; Reset entire level</span>
+		<br><br>
+		<span id="about">
+			Game &copy; 2011 <a href="http://miffthefox.info/">Miff</a>
+		</span>
+	</p>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="cookie.js"></script>
+	<script type="text/javascript" src="levels.js"></script>
+	<script type="text/javascript" src="colors.js"></script>
+</body>
+</html>

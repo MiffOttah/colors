@@ -1,0 +1,123 @@
+* {
+	margin: 0px;
+	padding: 0px;
+
+	color: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	text-decoration: inherit;
+}
+
+html, body {
+	color: #fff;
+	background: #000 none;
+	
+	font-family: "Nova Slim", "Trebuchet MS", "Arial", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+
+	text-align: center;
+}
+
+.no-html5 a { text-decoration: underline; }
+
+.effect {
+	position: absolute;
+	display: none;
+}
+#flash { background-color: #ccc; }
+
+h1 {
+	font-size: 180%;
+	margin: 0.4em 1em 0em;
+}
+#level-display {
+	font-size: 90%;
+	margin-top: 0.2em;
+}
+#level-display a {
+	border: 1px solid #ccc;
+	color: #ccc;
+	background-color: #777;
+	display: inline-block;
+	padding: 0.4em 1em;
+}
+#level-display a.active {
+	color: #000;
+	background-color: #ccc;
+}
+#level-display a.locked {
+	background-color: #000;
+	cursor: default;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 1em auto 0em;
+	cursor: default;
+}
+
+td {
+	border: 1px solid #555;
+	width: 24px;
+	height: 24px;
+	background: #000 none;
+}
+
+p { margin-top: 0.6em; }
+#signtext { visibility: hidden; }
+#quickhelp { margin: 2em auto 0em; max-width: 38em; }
+#quickhelp span {
+	margin: 0em 2em;
+	white-space: nowrap;
+}
+#about { font-size: 75%; }
+#about a { text-decoration: underline; }
+
+#player-keys { display: none; width: 40px; position: absolute; }
+#player-keys span { display: inline-block; width: 24px; height: 24px; }
+
+
+
+.color-white { background-color: #fff; }
+
+.color-red { background-color: #f00; }
+.color-blue { background-color: #00f; }
+.color-yellow { background-color: #ff0; }
+
+.color-red.color-blue { background-color: #a0f; } /* Purple */
+.color-blue.color-yellow { background-color: #0a0; } /* Green */
+.color-red.color-yellow { background-color: #f70; } /* Orange */
+
+.color-red.color-blue.color-yellow { background-color: #aaa; }
+
+
+.player { background-image: url(res/player.png); }
+
+.obj-wall { background-color: #555; }
+.obj-wire { background-color: #555; background-image: url(res/wires.png); }
+
+.obj-block { background-image: url(res/block.png); }
+.obj-colororb { background-image: url(res/colororb.png); }
+.obj-sign { background-image: url(res/sign.png); }
+.obj-outline { background-image: url(res/outline.png); }
+.obj-checkpoint { background-image: url(res/checkpoint.png); }
+.obj-keycard { background-image: url(res/keycard.png); }
+.obj-exit { background-image: url(res/door.png); }
+.obj-gate { background-image: url(res/gate.png); }
+.obj-teleporter { background-image: url(res/teleporter.png); }
+.obj-duplicator { background-image: url(res/duplicator.png); }
+.obj-switch { background-image: url(res/switch.png); }
+.obj-mechgate { background-image: url(res/mechgate_arm.png); }
+.obj-mechgate_center { background-image: url(res/mechgate_center_v2.png); }
+
+
+
+
+#editcontrols { display: none; }
+.edit-mode #editcontrols { display: block; }
+.edit-mode #quickhelp { display: none; }
+.edit-mode table { cursor: crosshair; }
+.edit-mode td:hover { border: 1px solid #0ff; }
+button { background: #eee; color: black; padding: 3px; margin: 0.3em 0.2em 0.1em; }
